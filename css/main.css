@@ -137,6 +137,18 @@ h2 {
 
 }
 
+.red-bar {
+    width: 100%;
+    background-color: var(--red);
+}
+
+.news-title {
+    background-color: var(--white);
+    width: 52px;
+    margin-left: 25px;
+    text-align: center;
+}
+
 img {
     display: block;
 }
@@ -172,3 +184,102 @@ td {
 }
 
 /* Sections */
+.sponsor {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: gray;
+}
+
+.sponsor-logo {
+    margin-left: 0.30rem;
+
+}
+
+.movie-component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.movie-rating {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+}
+
+.percent {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    font-family: "franklin-gothic-atf", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.movie-title {
+    display: flex;
+    height: 50px;
+    font-size: .875rem;
+    line-height: 1.4;
+    margin-bottom: 35;
+    font-family: "franklin-gothic-atf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-wrap: break-word;
+    margin-top: -6px;
+
+}
+
+.button {
+    background-color: transparent;
+    border: 1.5px solid black;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 75px;
+    font-family: "franklin-gothic-atf", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.p--small {}
+
+.fa-solid {
+    margin-right: 5px;
+}
+
+.icon2 {
+    margin-left: 25px;
+}
+
+.listing {
+    display: flex;
+
+
+}
+
+.full-movie {
+    width: 15%;
+    height: 450px;
+}
+
+.section-header {
+    display: flex;
+    align-items: flex-end;
+    border-left: 3px solid red;
+}
