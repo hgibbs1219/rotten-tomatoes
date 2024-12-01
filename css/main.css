@@ -6,7 +6,7 @@
     --green: #278240;
     --blue: #4176dc;
     --yellow: #f7e144;
-    --dark-gray: #646464;
+    --dark-gray: #282b30;
     --light-gray: #d9d9da;
     --white: #fff;
 }
@@ -135,6 +135,17 @@ h2 {
     text-transform: uppercase;
     font-style: normal;
 
+}
+
+li {
+    font-family: "loos-normal", sans-serif;
+    line-height: 1.75rem;
+    font-weight: 200;
+}
+
+.social-media .flat-list a {
+    color: var(--white);
+    margin-left: 15px;
 }
 
 .red-bar {
@@ -287,4 +298,70 @@ td {
     display: flex;
     align-items: flex-end;
     border-left: 8px solid red;
+}
+
+/*footer*/
+
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background: var(--dark-gray);
+    color: var(--white)
+}
+
+.first-list {
+    list-style-type: none;
+}
+
+.second-list {
+    list-style-type: none;
+}
+
+.social-media .flat-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.newsletter {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.newsletter-title {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.newsletter-body {
+    color: var(--white);
+    text-align: center;
+}
+
+.button-footer {
+    background-color: var(--blue);
+
+    color: var(--white);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "franklin-gothic-atf", sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    width: 64%;
+    align-self: center;
+
+
 }
