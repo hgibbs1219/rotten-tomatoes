@@ -363,5 +363,8 @@ td {
     width: 64%;
     align-self: center;
 
+}
 
+.social-title {
+    color: var(--white);
 }
