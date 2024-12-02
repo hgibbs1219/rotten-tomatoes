@@ -179,7 +179,7 @@ img {
 }
 
 /*Listings */
-td {
+.listings td {
     font-family: var(--font-sans-serif);
     border-bottom: 1px solid var(--light-gray);
     height: 50px;
@@ -367,4 +367,50 @@ td {
 
 .social-title {
     color: var(--white);
+}
+
+.privacy,
+.terms,
+.choices,
+.cali,
+.ad,
+.accessibility {
+    color: var(--white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+}
+
+.copyright {
+    color: var(--white);
+    background-color: var(--dark-gray);
+    text-align: center;
+    height: 100px;
+}
+
+.footer-table {
+    color: var(--white);
+    width: auto;
+    border-right: 2px solid var(--light-gray);
+    height: 31px;
+    padding-top: 30px;
+    font-family: var(--font-sans-serif);
+}
+
+.footer-table a {
+    color: var(--white);
+    width: auto;
+    text-decoration: none;
+
+}
+
+.footer-table td {
+    border-bottom: none;
+}
+
+.footer-container {
+    height: 50px;
 }
