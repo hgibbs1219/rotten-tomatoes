@@ -546,3 +546,35 @@ table {
     font-family: var(--font-sans-serif);
     font-weight: 500;
 }
+
+/* Second Navigation */
+.second-nav {
+    background-color: var(--dark-gray);
+    display: flex;
+}
+
+.second-nav-table {
+    width: 50%;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    font-family: var(--font-sans-serif);
+    font-size: .85rem;
+    height: 30px;
+}
+
+.trending {
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: "loos-normal", sans-serif;
+    font-weight: 600;
+}
+
+.sec-media {
+    display: flex;
+
+}
+
+.sec-media ul {
+    display: flex;
+    justify-content: flex-end;
+}
