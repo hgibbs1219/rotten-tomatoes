@@ -9,6 +9,7 @@
     --dark-gray: #282b30;
     --light-gray: #d9d9da;
     --white: #fff;
+    --super-gray: #636770;
 }
 
 /*fonts
@@ -325,13 +326,15 @@ img {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 
 .newsletter {
-    width: 20%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-self: center;
+    margin-bottom: 32px;
 }
 
 .newsletter-title {
@@ -367,6 +370,8 @@ img {
 
 .social-title {
     color: var(--white);
+    text-align: center;
+    width: 100%;
 }
 
 .privacy,
@@ -394,7 +399,7 @@ table {
 .footer-table {
     color: var(--white);
     width: auto;
-    border-right: 2px solid var(--light-gray);
+    border-right: 2px solid var(--super-gray);
     height: 31px;
     padding-top: 30px;
     font-family: var(--font-sans-serif);
@@ -409,8 +414,48 @@ table {
 
 .footer-table td {
     border-bottom: none;
+    padding-top: 0px;
 }
 
 .footer-container {
     height: 50px;
+}
+
+.footer-table {
+    padding-top: 0px;
+}
+
+.footer-access {
+    padding-top: 0px;
+    color: var(--white);
+    width: auto;
+    text-decoration: none;
+}
+
+.footer-access a {
+    color: var(--white);
+    font-family: var(--font-sans-serif);
+    text-decoration: none;
+}
+
+.first-container {
+    width: 25%;
+}
+
+.second-container {
+    width: 25%;
+}
+
+.social-media {
+    width: 25%;
+}
+
+.legal {
+    color: var(--white);
+}
+
+.legal p {
+    color: var(--super-gray);
+    font-weight: 300;
+    font-size: .75rem;
 }
