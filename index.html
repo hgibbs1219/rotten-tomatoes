@@ -6,10 +6,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equix="X-UA-Compatible" content="ie-edge">
     <title>Home | Rotten Tomatoes</title>
+    <!--Fonts goes here -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/pca5ztl.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pca5ztl.css">
+    <script src="https://kit.fontawesome.com/84d757a7c5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
 </head>
 
 <body>
-    <h1> Home page goes here</h1>
+
+    <div class="head-nav">
+        <div class="heading-bg">
+
+            <div class="logo">
+                <img src="components/img/rt-logo.png" alt="Logo" />
+            </div>
+            <div class="topnav">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="top-links">
+                <ul class="top-bar">
+                    <li><a href="!#">About Rotten Tomatoes</a></li>
+                    <li><a href="!#">Critics</a></li>
+                    <li><a href="!#">Login/Signup</a></li>
+                </ul>
+                <ul class="bottom-bar">
+                    <li><a href="!#">Movies</a></li>
+                    <li><a href="!#">TV Shows</a></li>
+                    <li><a href="!#">Fanstore</a></li>
+                    <li><a href="!#">News</a></li>
+                    <li><a href="!#">Showtimes</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!--Second Nav-->
+        <div class="head-nav">
+            <div class="second-nav">
+                <table class="second-nav-table">
+                    <td class="trending">Trending on RT</td>
+                    <td>Wicked Livestream</td>
+                    <td>Holiday Programming Guide</td>
+                    <td>Wicked Social Reactions</td>
+                    <td>Verified Hot Movies</td>
+                </table>
+
+            </div>
+            </article>
+        </div>
+
+        <!--Main Images-->
+        <div class="main-images">
+
+            <div class="wicked"><img src="img/wicked-2.png" alt="Wicked: Part 2" width="500"></div>
+            <div class="awards"> <img src="img/awards-leaderboard.png" alt="Awards Leaderboard" height="282"></div>
+            <div class="christmas"> <img src="img/christmas-movies.png" alt="Christmas Movies" height="282"></div>
+
+        </div>
+
+        <!--Now in Theatres-->
+        <div class="section-header">
+            <h1 class="theatres-heading">
+                <div class="now-in-theatres">Now in Theatres</div>
+            </h1>
+            <p class="sponsor">Brought to you by <img class="sponsor-logo" src="components/img/fandango-logo.png"
+                    alt="Fandango Logo" width="90px"></p>
+        </div>
+        <section class="listing">
+            <!--RED ONE-->
+            <div class="full-movie">
+                <img class="movie__img" src="components/img/red-one.png" alt="Red One" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/splat.png" width="16px">
+                            <p class="percent">34%</p>
+
+                            <img class="icon2" src="components/img/not-rating.png" width="16px">
+                            <p class="percent">- - </p>
+                        </div>
+                        <p class="movie-title">Red One</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--CONCLAVE-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="components/img/conclave.png" alt="Conclave" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/fresh-tomato.svg" width="16px">
+                            <p class="percent">91%</p>
+
+                            <img class="icon2" src="components/img/positive-audience.png" width="16px">
+                            <p class="percent">85%</p>
+                        </div>
+                        <p class="movie-title">Conclave</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Christmas Pagaent-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="components/img/christmas-pageant.png" alt="The best Christmas Pageant Ever"
+                    width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/tomato.png" width="16px">
+                            <p class="percent">89%</p>
+
+                            <img class="icon2" src="components/img/verified-hot.png" width="16px">
+                            <p class="percent">98%</p>
+                        </div>
+                        <p class="movie-title">The Best Christmas Pageant Ever</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Heretic-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="components/img/heretic.png" alt="Heretic" height="292.85px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/tomato.png" width="16px">
+                            <p class="percent">89%</p>
+
+                            <img class="icon2" src="components/img/verified-hot.png" width="16px">
+                            <p class="percent">98%</p>
+                        </div>
+                        <p class="movie-title">Heretic</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Juror 2-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="components/img/Juror2.png" alt="Red One" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/fresh-tomato.svg" width="16px">
+                            <p class="percent">92%</p>
+
+                            <img class="icon2" src="components/img/positive-audience.png" width="16px">
+                            <p class="percent">89% </p>
+                        </div>
+                        <p class="movie-title">Juror #2</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Rent at home-->
+        <div class="section-header">
+            <h1 class="theatres-heading">
+                <div class="now-in-theatres">New to buy/rent at home</div>
+            </h1>
+            <p class="sponsor">Brought to you by <img class="sponsor-logo" src="components/img/fandango-logo.png"
+                    alt="Fandango Logo" width="90px"></p>
+        </div>
+        <section class="listing">
+            <!--Terrifier-->
+            <div class="full-movie">
+                <img class="movie__img" src="img/terrifier.png" alt="Terrifier" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/fresh-tomato.svg" width="16px">
+                            <p class="percent">77%</p>
+
+                            <img class="icon2" src="components/img/verified-hot.png" width="16px">
+                            <p class="percent">85</p>
+                        </div>
+                        <p class="movie-title">Terrifier</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--CONCLAVE-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="components/img/conclave.png" alt="Conclave" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/fresh-tomato.svg" width="16px">
+                            <p class="percent">91%</p>
+
+                            <img class="icon2" src="components/img/positive-audience.png" width="16px">
+                            <p class="percent">85%</p>
+                        </div>
+                        <p class="movie-title">Conclave</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Juror 2-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="components/img/Juror2.png" alt="Juror 2" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/fresh-tomato.svg" width="16px">
+                            <p class="percent">93%</p>
+
+                            <img class="icon2" src="components/img/verified-hot.png" width="16px">
+                            <p class="percent">98%</p>
+                        </div>
+                        <p class="movie-title">Juror #2</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Elevation-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="img/elevation.png" alt="elevation" height="292.85px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/splat.png" width="16px">
+                            <p class="percent">55%</p>
+
+                            <img class="icon2" src="components/img/positive-audience.png" width="16px">
+                            <p class="percent">81%</p>
+                        </div>
+                        <p class="movie-title">Elevation</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Dear Santa-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="img/dear-santa.png" alt="Dear Santa" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/splat.png" width="16px">
+                            <p class="percent">22%</p>
+
+                            <img class="icon2" src="components/img/green-popcorn.png" width="16px">
+                            <p class="percent">46% </p>
+                        </div>
+                        <p class="movie-title">Dear Santa</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Latest in Streaming-->
+        <div class="section-header">
+            <h1 class="theatres-heading">
+                <div class="now-in-theatres">Latest in Streaming</div>
+            </h1>
+            <p class="sponsor">Brought to you by <img class="sponsor-logo" src="components/img/fandango-logo.png"
+                    alt="Fandango Logo" width="90px"></p>
+        </div>
+        <section class="listing">
+            <!--Dexter-->
+            <div class="full-movie">
+                <img class="movie__img" src="img/dexter.png" alt="Dexter" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/not-rating.png" width="16px">
+                            <p class="percent">--</p>
+
+                            <img class="icon2" src="components/img/not-rating.png" width="16px">
+                            <p class="percent">--</p>
+                        </div>
+                        <p class="movie-title">Dexter: Original Sin</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Secret Level-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="img/secret-level.png" alt="Secret Level" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/tomato.png" width="16px">
+                            <p class="percent">64%</p>
+
+                            <img class="icon2" src="components/img/not-rating.png" width="16px">
+                            <p class="percent">--</p>
+                        </div>
+                        <p class="movie-title">Secret Level</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Skeleton Crew-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="components/img/skeleton-crew.png" alt="Skeleton Crew" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/fresh-tomato.png" width="16px">
+                            <p class="percent">96%</p>
+
+                            <img class="icon2" src="components/img/positive-audience.png" width="16px">
+                            <p class="percent">81%</p>
+                        </div>
+                        <p class="movie-title">Star Wars: Skeleton Crew</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Creature Commandos-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="img/creature-commandos.png" alt="Creature Commandos" height="292.85px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/fresh-tomato.png" width="16px">
+                            <p class="percent">94%</p>
+
+                            <img class="icon2" src="components/img/positive-audience.png" width="16px">
+                            <p class="percent">78%</p>
+                        </div>
+                        <p class="movie-title">Creature Commandos</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Black Doves-->
+            <div class="full-movie">
+
+                <img class="movie__img" src="img/black-doves.png" alt="Black Doves" width="206px" />
+                <div class="content">
+                    <div class="movie-rating">
+                        <div class="rating"><img class="icon" src="components/img/fresh-tomato.png" width="16px">
+                            <p class="percent">98%</p>
+
+                            <img class="icon2" src="components/img/positive-audience.png" width="16px">
+                            <p class="percent">70% </p>
+                        </div>
+                        <p class="movie-title">Black Doves</p>
+                        <p><a class="button" href="#"><i class="fa-solid fa-plus"></i> Watchlist</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 </body>
 
 </html>
