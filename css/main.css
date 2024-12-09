@@ -825,7 +825,7 @@ table.table-container {
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
-    font-family: var(--font-family);
+    font-family: "franklin-gothic-atf", sans-serif;
     text-align: center;
     font-size: 13px;
     padding-right: 10px;
@@ -833,6 +833,4 @@ table.table-container {
     text-transform: uppercase;
     width: 64%;
     align-self: center;
-    font-size: 1.1rem;
-
 }
