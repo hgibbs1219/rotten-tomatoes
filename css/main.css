@@ -11,6 +11,8 @@
     --light-gray: #d9d9da;
     --white: #fff;
     --super-gray: #636770;
+    --black: #000;
+    --med-gray: #6f6f6f;
 }
 
 /*fonts
@@ -138,6 +140,7 @@ body {
 
 .heading-bg {
     display: flex;
+    height: auto;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -151,14 +154,23 @@ body {
 
 .topnav input[type="text"] {
     padding: 5px;
-    border-radius: 4px;
+    border-radius: 16px;
     border: 1px solid #ccc;
+    background-color: var(--dark-red);
+    color: white;
+    width: 509px;
+}
+
+placeholder {
+    color: white;
 }
 
 .top-links ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    width: 450px;
+    padding-bottom: 25px;
 }
 
 .top-links ul li {
@@ -175,29 +187,35 @@ body {
     margin: 0 10px;
 }
 
+.bottom-bar ul {
+    width: 400px;
+}
+
 /* For the second navigation table */
-.second-nav-table {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    text-align: center;
-    padding: 10px 20px;
+.second-nav-list {
+    display: flex;
+    list-style: none;
     color: var(--white);
-    background-color: var(--dark-gray);
-    font-family: var(--font-sans-serif);
-    font-size: .85rem;
-    height: 30px;
+    column-gap: 14px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 .second-nav-table td {
     font-weight: bold;
     font-size: 14px;
+    width: 203px;
+    font-family: var(--font-sans-serif);
+    font-weight: 200;
+
 }
 
 .main-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    gap: 10px;
     padding: 20px;
 }
 
@@ -466,7 +484,7 @@ table.listings tr:hover {
 
 /* Second Navigation */
 .second-nav {
-    background-color: var(--dark-gray);
+    background-color: var(--med-gray);
     display: flex;
 }
 
@@ -474,7 +492,7 @@ table.listings tr:hover {
     color: var(--yellow);
     text-transform: uppercase;
     font-family: "loos-normal", sans-serif;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 /*Top Navigation */
@@ -497,4 +515,36 @@ table.listings tr:hover {
 .top-links a {
     color: var(--white);
     text-decoration: none;
+}
+
+.box-office {
+    width: 40%;
+}
+
+/*Trailers Grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal-width columns */
+    grid-template-rows: repeat(3, 250px);
+    /* 3 rows, each 100px high */
+    gap: 10px;
+    /* space between grid items */
+    padding: 10px;
+    height: 550px;
+}
+
+
+.grid-item {
+    color: var(--black);
+    display: flex;
+    font-size: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.grid-item h3 {
+    text-align: left;
+    justify-content: left;
 }
