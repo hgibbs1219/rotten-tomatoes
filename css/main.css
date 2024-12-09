@@ -141,7 +141,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: var(--red);
+    padding: 10px 20px;
 }
 
 .logo img {
@@ -461,9 +462,39 @@ table.listings tr:hover {
     width: 40%;
 }
 
+
+
+/* Second Navigation */
+.second-nav {
+    background-color: var(--dark-gray);
+    display: flex;
+}
+
 .trending {
     color: var(--yellow);
     text-transform: uppercase;
     font-family: "loos-normal", sans-serif;
     font-weight: 600;
+}
+
+/*Top Navigation */
+.topnav {
+    overflow: hidden;
+    font-family: var(--font-sans-serif);
+    width: 33%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.top-links a {
+    color: var(--white);
+    text-decoration: none;
 }
