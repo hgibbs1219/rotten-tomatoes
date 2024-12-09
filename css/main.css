@@ -1,6 +1,7 @@
 :root {
     --font-sans-serif: "franklin-gothic-atf", sans-serif;
-    --font-serif:
+    --font-family-headings: "franklin-gothic-atf", sans-serif;
+    --font-family: 'loos'
         --black: #000;
     --red: #f0320c;
     --dark-red: #96200b;
@@ -13,7 +14,10 @@
     --super-gray: #636770;
     --black: #000;
     --med-gray: #6f6f6f;
+    --font-family: 'bebas-kai', sans-serif;
+
 }
+
 
 /*fonts
 Franklin Gothic ATF Thin
@@ -56,9 +60,9 @@ font-family: "franklin-gothic-atf", sans-serif;
 font-weight: 400;
 font-style: italic;
 
-Franklin Gothic ATF Medium
+Franklin Gothic ATF Regular
 font-family: "franklin-gothic-atf", sans-serif;
-font-weight: 500;
+font-weight: 400;
 font-style: normal;
 
 Franklin Gothic ATF Medium Italic
@@ -129,7 +133,52 @@ html {
 
 body {
     font-family: 'Libre Franklin', sans-serif;
+    margin-left: 3% !important;
+    margin-right: 3% !important;
 }
+
+h1 {
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0px;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-family: var(--font-family-headings);
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 0.75rem;
+    font-family: var(--font-sans-serif);
+    font-weight: 200;
+}
+
+
+
+p {
+    font-family: var(--font-sans-serif);
+    font-size: 0.95rem;
+}
+
+a {
+    font-family: var(--font-sans-serif);
+    font-size: 0.95rem;
+}
+
+li {
+    font-family: var(--font-sans-serif);
+    font-size: 0.90rem;
+}
+
+
 
 /* Make the main navigation responsive */
 .head-nav {
@@ -161,9 +210,6 @@ body {
     width: 509px;
 }
 
-placeholder {
-    color: white;
-}
 
 .top-links ul {
     display: flex;
@@ -191,6 +237,24 @@ placeholder {
     width: 400px;
 }
 
+.button {
+    background-color: transparent;
+    border: 1.5px solid black;
+    color: black;
+    text-decoration: none;
+    border-radius: 75px;
+    font-family: "franklin-gothic-atf", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+}
+
 /* For the second navigation table */
 .second-nav-list {
     display: flex;
@@ -204,12 +268,24 @@ placeholder {
 }
 
 .second-nav-table td {
-    font-weight: bold;
     font-size: 14px;
     width: 203px;
     font-family: var(--font-sans-serif);
     font-weight: 200;
 
+}
+
+.second-nav {
+    height: 24px;
+}
+
+.second-nav-list {
+    display: flex;
+    list-style: none;
+    column-gap: 25px;
+    color: var(--white);
+    margin-left: 10px;
+    align-items: center;
 }
 
 .main-images {
@@ -307,20 +383,35 @@ body {
     font-family: 'Libre Franklin', sans-serif;
 }
 
+.section-heading-container {
+    border-left: 5px solid var(--red);
+    margin-left: 20px;
+}
+
 .section-header {
     padding: 20px;
-    background-color: #f8f8f8;
+    display: flex;
+    column-gap: 20px;
+    border-left: 5px solid var(--red);
+    margin-left: 2px;
+    margin-left: 20px;
+    height: 20px;
 }
 
 .theatres-heading .now-in-theatres {
-    font-size: 24px;
-    font-weight: bold;
+    height: 27px;
+}
+
+.now-in-theatres {
+    margin-top: -37px;
+
 }
 
 .sponsor {
-    font-size: 16px;
+    font-size: .85rem;
     display: flex;
     align-items: center;
+    color: var(--med-gray);
 }
 
 .sponsor-logo {
@@ -343,8 +434,6 @@ body {
     /* Set a fixed width for the movie cards */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .movie__img {
@@ -357,7 +446,7 @@ body {
 }
 
 /* Rating icons */
-.rating {
+.rating td {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,19 +460,13 @@ body {
 }
 
 .movie-title {
-    font-size: 16px;
-    font-weight: bold;
+    font-family: var(--font-sans-serif);
+    padding-top: 10px;
+    width: 300px;
+    font-size: 0.85rem;
 }
 
-.button {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #d9534f;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 10px;
-}
+
 
 /* Responsive styling */
 @media (max-width: 768px) {
@@ -423,64 +506,21 @@ body {
     }
 }
 
-
-/* General styling for the table */
-table.listings {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table.listings td {
-    width: 50%
-}
-
-table.listings th,
-table.listings td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-table.listings th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-table.listings td {
-    font-size: 14px;
-}
-
-/* Rating column styling */
-.rating {
-    display: flex;
-    align-items: center;
-    width: 20%;
-}
-
-.rating img {
-    margin-right: 5px;
-}
-
-/* Optional: hover effect for rows */
-table.listings tr:hover {
-    background-color: #f1f1f1;
-}
-
+/*Tables */
 .listings-lists {
     display: flex;
-    justify-content: center;
+    column-gap: 20px;
+    padding-bottom: 15px;
 }
 
 .streaming {
-    width: 40%;
+    width: 50%;
+    margin-left: 20px;
 }
 
-.popular {
-    width: 40%;
+.listings td {
+    width: 400px;
 }
-
-
 
 /* Second Navigation */
 .second-nav {
@@ -517,9 +557,6 @@ table.listings tr:hover {
     text-decoration: none;
 }
 
-.box-office {
-    width: 40%;
-}
 
 /*Trailers Grid*/
 .grid-container {
@@ -532,6 +569,7 @@ table.listings tr:hover {
     /* space between grid items */
     padding: 10px;
     height: 550px;
+    margin-left: 10px;
 }
 
 
@@ -546,5 +584,253 @@ table.listings tr:hover {
 
 .grid-item h3 {
     text-align: left;
-    justify-content: left;
+    font-size: 1.15rem;
+}
+
+tr {
+    height: 50px;
+}
+
+.rating img {
+    margin-right: 4px;
+}
+
+td {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.rating-icon {
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.movie-rating {
+    row-gap: 50px;
+}
+
+.grid-item-main {
+    width: 600px;
+}
+
+.grid-item-main img {
+    width: 500px;
+}
+
+.trailers-videos {
+    margin-top: -40px;
+}
+
+/*footer*/
+
+/* General Footer Styles */
+footer {
+    display: flex;
+    /* Create responsive grid */
+    gap: 70px;
+    padding: 20px;
+    background-color: var(--dark-gray);
+    border-top: 1px solid #ddd;
+    color: white;
+}
+
+.first-container,
+.second-container,
+.newsletter,
+.social-media {
+    padding: 10px;
+}
+
+.first-list,
+.second-list,
+.social-media.flat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.first-list li,
+.second-list li,
+.social-media.flat-list li {
+    margin-bottom: 10px;
+}
+
+/* Styling for the newsletter section */
+.newsletter-title {
+    text-align: center;
+    font-weight: 500;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-body {
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+.button-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Social media icons */
+.social-media i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-media .flat-list a {
+    color: white;
+}
+
+.social-title {
+    padding-bottom: 10px;
+}
+
+/* Copyright table styles */
+table.table-container {
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-table a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px;
+    font-weight: 200;
+}
+
+.footer-table a:hover {
+    text-decoration: underline;
+}
+
+.footer-access {
+    text-align: center;
+    border-bottom: none;
+    padding-left: 10px;
+    font-weight: 200;
+}
+
+.footer-access a,
+.footer-privacy a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-privacy a {
+    text-decoration: none;
+    padding-right: 10px;
+    font-weight: 200;
+}
+
+.footer-privacy {
+    border-bottom: none !important;
+    border-right: 1px solid var(--super-gray);
+
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        /* Stack elements vertically on smaller screens */
+    }
+
+    .footer-table {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-table a {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    .social-media flat-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media li {
+        margin-right: 10px;
+    }
+}
+
+/* Very small screens (e.g. mobile portrait) */
+@media (max-width: 480px) {
+    .footer-table a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .social-media i {
+        font-size: 20px;
+    }
+
+    .button-footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+.component-footer {
+    width: 100%;
+    background-color: var(--dark-gray);
+}
+
+.legal {
+    color: var(--super-gray);
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-table {
+    border-right: 1px solid var(--med-gray);
+    border-bottom: none;
+    color: white;
+}
+
+.footer-table a {
+    color: var(--white);
+}
+
+.table-container-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.button-footer {
+    background-color: var(--blue);
+
+    color: var(--white);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "franklin-gothic-atf", sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    width: 64%;
+    align-self: center;
 }
